@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerardo Miño | Despachante de Aduana</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#4dabf7',
+                            DEFAULT: '#1c7ed6',
+                            dark: '#1864ab',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-earth-americas text-brand text-3xl mr-3"></i>
+                    <span class="font-bold text-xl text-slate-800 leading-tight">Gerardo Miño<br><span class="text-brand text-base">Despachante de Aduana</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#servicios" class="text-gray-600 hover:text-brand font-medium transition-colors">Servicios</a>
+                    <a href="#regimenes" class="text-gray-600 hover:text-brand font-medium transition-colors">Regímenes</a>
+                    <a href="#nosotros" class="text-gray-600 hover:text-brand font-medium transition-colors">Nosotros</a>
+                    <a href="https://wa.me/541155010680" target="_blank" rel="noopener noreferrer" class="bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl flex items-center">
+                        <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Contactar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-pattern pt-32 pb-20 md:pt-40 md:pb-32 text-white mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 animate-fade-in-up">
+                Simplificamos tus operaciones de <span class="text-brand-light">Comercio Exterior</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-light mb-10">
+                Gestión aduanera, logística internacional y asesoría integral. Unificamos toda tu operativa en un solo lugar.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#servicios" class="bg-brand hover:bg-brand-dark text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-brand/50 flex items-center justify-center">
+                    Ver Nuestros Servicios
+                </a>
+                <a href="https://wa.me/541155010680" target="_blank" rel="noopener noreferrer" class="bg-white text-slate-900 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg flex items-center justify-center">
+                    <i class="fa-brands fa-whatsapp text-green-500 text-xl mr-2"></i> Consulta Gratuita
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Services Section -->
+    <section id="servicios" class="py-20 bg-gray-50 flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Servicios Integrales</h2>
+                <div class="w-24 h-1 bg-brand mx-auto rounded-full"></div>
+                <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">Ofrecemos soluciones completas para que tu negocio conecte con el mundo, abarcando todos los aspectos de la cadena logística y aduanera.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Servicio 1: Despachante -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-brand/10 text-brand rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Despachante de Aduana</h3>
+                    <p class="text-gray-600 mb-4">
+                        Gestión aduanera de importación y exportación ágil y segura. Liberación de mercadería cumpliendo todas las normativas.
+                    </p>
+                </div>
+
+                <!-- Servicio 2: Freight Forwarder -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-slate-800 text-white rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-ship"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Freight Forwarder</h3>
+                    <p class="text-gray-600 mb-4">
+                        Fletes internacionales marítimos (FCL/LCL), aéreos y terrestres. Excelentes tarifas y coordinación puerta a puerta.
+                    </p>
+                    <a href="https://sites.google.com/view/global-trip-forwarder" target="_blank" rel="noopener noreferrer" class="text-brand font-semibold text-sm hover:underline flex items-center mt-2">
+                        Ver sitio de Logística <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Servicio 3: Terceros Organismos -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-brand/10 text-brand rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-building-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Terceros Organismos</h3>
+                    <p class="text-gray-600 mb-4">
+                        Tramitaciones ante ANMAT, INAL, Secretaría de Comercio (SIMI/SIRA) y demás organismos extra-aduaneros.
+                    </p>
+                </div>
+
+                <!-- Servicio 4: Asesoría y Outsourcing -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-brand/10 text-brand rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Consultoría Comex</h3>
+                    <p class="text-gray-600 mb-4">
+                        Servicio de asesoramiento integral. Gestionamos tus operaciones funcionando como tu departamento de Comercio Exterior externalizado.
+                    </p>
+                    <a href="https://mgo1022-github.io/asesoria-importacion-/" target="_blank" rel="noopener noreferrer" class="text-brand font-semibold text-sm hover:underline flex items-center mt-2">
+                        Ver sitio de Asesoría <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Servicio 5: Courier Express -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-brand/10 text-brand rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-box-fast"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Courier Express</h3>
+                    <p class="text-gray-600 mb-4">
+                        Solución rápida y conveniente para urgencias, muestras comerciales o cargas pequeñas puerta a puerta.
+                    </p>
+                </div>
+
+                <!-- Servicio 6: Seguros -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-brand/10 text-brand rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-shield-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Seguro Internacional</h3>
+                    <p class="text-gray-600 mb-4">
+                        Pólizas de seguro de transporte internacional para proteger tu mercadería contra todo riesgo desde el origen hasta el destino.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Regímenes Vigentes Info Section -->
+    <section id="regimenes" class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <span class="text-brand font-bold tracking-wider uppercase text-sm">Información Útil</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mt-2 mb-4">Regímenes Vigentes en Argentina</h2>
+                <div class="w-16 h-1 bg-brand mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Regimen General -->
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <h4 class="text-lg font-bold text-slate-800 mb-3 border-b pb-2"><i class="fa-solid fa-ship text-brand mr-2"></i> Régimen General</h4>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Requiere ser Importador/Exportador registrado y Responsable Inscripto.</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> No hay límites en cantidades, peso ni volumen.</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> <strong>Marcas:</strong> Requiere autorización de la marca registrada en Argentina.</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> <strong>Pagos:</strong> Giro bancario al exterior (sujeto a normativas vigentes).</li>
+                    </ul>
+                </div>
+
+                <!-- Courier Comercial -->
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <h4 class="text-lg font-bold text-slate-800 mb-3 border-b pb-2"><i class="fa-solid fa-plane text-brand mr-2"></i> Courier Comercial</h4>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> No se necesita ser Importador registrado.</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Límite: Hasta 50 kgs y USD 1000 por envío.</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Fines comerciales permitidos, sin límite de cantidad de artículos. 1 envío por día.</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Sin intervención de 3ros organismos (Anmat, Inal, etc.) ni dumping.</li>
+                    </ul>
+                </div>
+
+                <!-- Pequeños Envíos -->
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <h4 class="text-lg font-bold text-slate-800 mb-3 border-b pb-2"><i class="fa-solid fa-box text-brand mr-2"></i> Pequeños Envíos</h4>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> No se necesita ser Importador.</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Límite: Hasta 50 kgs, USD 1000 y máximo 3 unidades de la misma familia.</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Hasta 5 envíos al año por CUIT/CUIL.</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Pagos con medios por fuera del sistema bancario tradicional.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <!-- Imagen representativa -->
+                        <div class="h-80 md:h-[450px] w-full rounded-2xl overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Operaciones de Comercio Exterior" class="object-cover w-full h-full">
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 bg-slate-800 text-white p-6 rounded-xl shadow-xl hidden md:block border-l-4 border-brand">
+                            <p class="text-2xl font-bold"><i class="fa-solid fa-location-dot text-brand mr-2"></i> Ubicación</p>
+                            <p class="text-sm font-medium text-gray-300 mt-1">Cerca de la Aduana y Puertos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="uppercase tracking-wide text-sm text-brand font-bold mb-2">Conócenos</div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Sobre Gerardo Miño</h2>
+                    <div class="w-20 h-1 bg-brand rounded-full mb-6"></div>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Somos especialistas en comercio exterior. Te ofrecemos la posibilidad de <strong>unificar toda tu operativa internacional en un solo lugar</strong>, o bien utilizar el servicio específico que más necesites, con tarifas adecuadas a tu proyecto.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Nuestras oficinas están estratégicamente ubicadas cerca de la Aduana y de las terminales portuarias en Buenos Aires, lo que nos permite agilizar al máximo los aspectos operativos y físicos de tu carga.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brand/10 text-brand rounded-full flex items-center justify-center text-xl mr-4 shrink-0">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <span class="font-semibold text-slate-800 leading-tight">Servicio Personalizado</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brand/10 text-brand rounded-full flex items-center justify-center text-xl mr-4 shrink-0">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <span class="font-semibold text-slate-800 leading-tight">Trámites Ágiles</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brand/10 text-brand rounded-full flex items-center justify-center text-xl mr-4 shrink-0">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <span class="font-semibold text-slate-800 leading-tight">Seguridad Jurídica</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brand/10 text-brand rounded-full flex items-center justify-center text-xl mr-4 shrink-0">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <span class="font-semibold text-slate-800 leading-tight">Red Global</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-slate-900 py-16 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-brand rounded-full opacity-10 -mr-20 -mt-20"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl font-bold text-white mb-6">¿Listo para importar sin complicaciones?</h2>
+            <p class="text-gray-300 mb-8 text-lg">Escribinos ahora por WhatsApp y obtén una cotización o asesoramiento personalizado de inmediato.</p>
+            <a href="https://wa.me/541155010680" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-slate-900 bg-green-400 rounded-full hover:bg-green-300 transition-colors shadow-lg shadow-green-400/30">
+                <i class="fa-brands fa-whatsapp text-2xl mr-3"></i> Chatear al +54 11 5501-0680
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 pt-12 pb-8 text-gray-400 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center border-b border-gray-800 pb-8 mb-8">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fa-solid fa-earth-americas text-brand text-2xl mr-2"></i>
+                    <span class="font-bold text-xl text-white">Gerardo Miño</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://sites.google.com/view/global-trip-forwarder" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Logística</a>
+                    <a href="https://mgo1022-gif.github.io/asesoria-importacion-/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Asesoría</a>
+                    <a href="#regimenes" class="hover:text-white transition-colors">Regímenes</a>
+                    <a href="https://wa.me/541155010680" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Contacto</a>
+                </div>
+            </div>
+            <div class="text-center text-sm">
+                <p>&copy; 2024 Gerardo Miño - Despachante de Aduana. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de WhatsApp Flotante -->
+    <a href="https://wa.me/541155010680" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-all z-50 animate-bounce">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
